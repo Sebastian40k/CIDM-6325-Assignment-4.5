@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T100 Queries</title>
+</head>
+
+<body>
+    <h1>Queries for T-100</h1>
+
+    <ul>
+        <li><a href="{% url 'top5paxorigin' %}">Total passengers by origin</a></li>
+        <li> <a href="{% url 'top5paxdestination' %}"> Total passengers by destination</a></li>
+        <li><a href="{% url 'top5forigin' %}">Total freight by origin</a></li>
+        <li> <a href="{% url 'top5fdestination' %}"> Total freight by destination</a></li>
+        <li><a href="{% url 'top5mailorigin' %}">Total mail by origin</a></li>
+        <li> <a href="{% url 'top5maildestination' %}"> Total mail by destination</a></li>
+        <li><a href="{% url 'top5origdistance' %}">Top five airlines by origin distance</a></li>
+        <li> <a href="{% url 'top5destdistance' %}"> Top five airlines by destination distance</a></li>
+        <li><a href="{% url 'highpaxxmonth' %}">Most passengers in a month</a></li>
+        <li><a href="{% url 'highdistancexmonth' %}">Highestest distance in a month</a></li>
+        <li><a href="{% url 'Highfreight' %}">Most freight</a></li>
+        <li><a href="{% url 'highpax' %}">Most passengers</a></li>
+        <li><a href="{% url 'highmail' %}">Most mail</a></li>
+        <li><a href="{% url 'PaxXmonthairlines' %}">ranked AA, AS, DL, UA, WN, by passengers per month</a></li>
+        <li><a href="{% url 'Avgpaxtowards' %}">average passengers towards LAX, SFO, DFW, ATL, ORD</a></li>
+        <li><a href="{% url 'avgfreightfrom' %}">average freight from MIA, MEM, JFK, ANC, SDF</a></li>
+        <li><a href="{% url 'pairhighfreightfar' %}">city pairs for the most freight moved furthest</a></li>
+        <li><a href="{% url 'pairhighmailshort' %}">city pairs for the most mail sent the shortest distance</a></li>
+    </ul>
+
+</body>
+
+</html>
